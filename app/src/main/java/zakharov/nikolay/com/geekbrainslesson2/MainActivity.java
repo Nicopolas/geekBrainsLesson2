@@ -37,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
             lastRecordDate = savedInstanceState.getString(EXTRA_LAST_RECORD_DATE);
         }
 
+        setListeners();
+    }
+
+    private void setListeners() {
         pullUpsButton = findViewById(R.id.pull_up_button);
         pullUpsButton.setOnClickListener(new View.OnClickListener() {
             @Override
